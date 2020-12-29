@@ -1,0 +1,6 @@
+{
+    "testFiles": "**/*.feature",
+    "env": {
+        "allureResultsPath": "output/allure-result"
+    }
+}

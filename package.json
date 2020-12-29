@@ -1,0 +1,21 @@
+{
+  "name": "cypress-with-cucumber",
+  "version": "1.0.0",
+  "description": "cypress integration with cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kunal ashar",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^1.9.0",
+    "cypress": "^6.2.0",
+    "cypress-cucumber-preprocessor": "^4.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "commonPath": "cypress/integration/common",
+    "stepDefinitions": "cypress/integration/step_definitions"
+  }
+}
