@@ -12,9 +12,4 @@ Feature: Dashboard Page Content Verification
     Scenario: Verify Negative Scenario
         Given User is on "dashboard" page
         Then User lands on "Software" listing page
-
-    Scenario: Test
-        Given User is at home <check>
-            | Test | 123     | check    |
-            | Test | abcswdc | sadcdsfd |
-        When 
+        
