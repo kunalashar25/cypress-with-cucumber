@@ -20,3 +20,4 @@ import './commands'
 // require('./commands')
 require('@shelex/cypress-allure-plugin');
 require('cypress-xpath');
+require('cypress-terminal-report/src/installLogsCollector')(); //https://github.com/archfz/cypress-terminal-report

@@ -26,5 +26,14 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
   on('file:preprocessor', cucumber())
   allureWriter(on, config);
+  require('cypress-terminal-report/src/installLogsPrinter')(on);
+
+  require('cypress-log-to-output').install(on, (type, event) => {   
+    //https://github.com/flotwig/cypress-log-to-output 
+    if (event.level === 'error' || event.type === 'error') {
+      return true
+    }
+    return false
+  })
   return config;
 }
