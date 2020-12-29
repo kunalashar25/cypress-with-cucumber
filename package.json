@@ -11,11 +11,12 @@
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^1.9.0",
     "cypress": "^6.2.0",
-    "cypress-cucumber-preprocessor": "^4.0.0"
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-xpath": "^1.6.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "commonPath": "cypress/integration/common",
+    "commonPath": "cypress/integration/step_definitions/common",
     "stepDefinitions": "cypress/integration/step_definitions"
   }
 }

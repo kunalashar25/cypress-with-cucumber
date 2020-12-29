@@ -1,5 +1,6 @@
 {
     "testFiles": "**/*.feature",
+    "viewportWidth": 1010,
     "env": {
         "allureResultsPath": "output/allure-result"
     }
