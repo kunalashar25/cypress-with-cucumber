@@ -4,6 +4,10 @@ const MENU_ELECTRONICS = '(//a[normalize-space()="Electronics"])[1]'
 
 class ParentMenu {
 
+    /**
+     * @description get parent menu locator
+     * @param {string} value
+     */
     static getMenu(value) {
         switch (value) {
             case "computers":

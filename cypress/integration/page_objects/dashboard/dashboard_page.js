@@ -7,12 +7,18 @@ const URL = 'https://demo.nopcommerce.com/'
 
 class DashboardPage extends BasePage {
 
-    // load dashabord page
+    /**
+     * @description go to dashboard page
+     */
     open() {
         this.openPage(URL)
     }
 
-    // select Menu item
+    /**
+     * @description select Menu item
+     * @param {any} parent
+     * @param {any} child
+     */
     selectMenu(parent, child) {
         var parentLocator = ParentMenu.getMenu(parent)
         var childLocator = ChildMenu.getMenu(child)

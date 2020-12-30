@@ -4,6 +4,10 @@ const MENU_SOFTWARE = '//img[contains(@title,"Software")]'
 
 class ChildMenu{
 
+    /**
+     * @description get child menu locator
+     * @param {string} value
+     */
     static getMenu(value) {
         switch (value) {
             case "desktop":

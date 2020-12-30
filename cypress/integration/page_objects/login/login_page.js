@@ -10,23 +10,34 @@ const EMAIL_ERROR = ".message-error"
 
 class LoginPage extends BasePage {
 
-    // open login page
+    /**
+     * @description open login page  
+     */ 
     open() {
         this.openPage(URL)
     }
 
-    // fill usernamen and password
+    /**
+     * @description fill usernamen and password
+     * @param {string} username
+     * @param {string} password
+     */
     enterCredentials(username, password) {
         this.fillText(USERNAME_TEXTBOX, username)
         this.fillText(PASSWORD_TEXTBOX, password)
     }
 
-    // perform login
+    /**
+     * @description perform login
+     */
     login() {
         this.click(LOGIN_BUTTON)
     }
 
-    // check error message
+    /**
+     * @description check error message
+     * @param {string} message
+     */
     verifyErrorMessage(message) {
         this.getText(EMAIL_ERROR).should('equal', message)
     }

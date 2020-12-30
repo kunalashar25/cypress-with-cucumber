@@ -7,8 +7,12 @@ const PAGE_TITLE = '.page-title'
 
 class ItemListings extends BasePage {
 
-    verifyPageText(value) {
-        this.getText(PAGE_TITLE).should('equal',value)
+    /**
+     * @description Verify Header of the page
+     * @param {string} value
+     */
+    verifyPageHeader(value) {
+        this.getText(PAGE_TITLE).should('equal', value)
     }
 }
 

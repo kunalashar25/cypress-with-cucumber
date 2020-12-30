@@ -4,7 +4,8 @@
   "description": "cypress integration with cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc"
   },
   "author": "kunal ashar",
   "license": "ISC",
@@ -14,7 +15,8 @@
     "cypress-cucumber-preprocessor": "^4.0.0",
     "cypress-log-to-output": "^1.1.2",
     "cypress-terminal-report": "^2.4.0",
-    "cypress-xpath": "^1.6.1"
+    "cypress-xpath": "^1.6.1",
+    "typescript": "^4.1.3"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,

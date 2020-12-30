@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2015",
+        "outDir": "./dist",
+        "allowJs": true,
+        "checkJs": true,
+        "strict": true,
+        "alwaysStrict": true,
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "pretty": true,
+        "strictNullChecks": true,
+        "sourceMap": false
+    },
+    "include": [
+        "node_modules/cypress-xpath/src/index.d.ts",
+        "cypress/integration/page_objects",
+        "cypress/integration/step_definitions"
+    ],
+    "exclude": [
+        
+    ]
+}
