@@ -24,7 +24,8 @@ class DashboardPage extends BasePage {
         var childLocator = ChildMenu.getMenu(child)
 
         this.hoverAndClick(parentLocator, childLocator)
-        this.clickWithXpath(childLocator)
+        //this.clickWithXpath(childLocator)
+        this.click(childLocator)
     }
 }
 

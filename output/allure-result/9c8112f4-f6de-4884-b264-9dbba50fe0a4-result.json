@@ -1,1 +1,331 @@
-{"uuid":"9c8112f4-f6de-4884-b264-9dbba50fe0a4","historyId":"03aa048c64e534caf77d7e8a51bd1915","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306496275,"name":"visit (\"https://demo.nopcommerce.com/login\")","stop":1609306497675},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306497675,"name":"POST https://www.google-analytics.com/j/collect?v=1&_v=j87&a=610063038&t=pageview&_s=1&dl=https://demo.nopcommerce.com/login&ul=en-gb&de=UTF-8&dt=nopCommerce demo store. Login&sd=30-bit&sr=1440x900&vp=1010x660&je=0&_u=IEBAAAABAAAAAC~&jid=1491499212&gjid=516412101&cid=1849141274.1609306498&tid=UA-7490022-2&_gid=344234115.1609306498&_r=1&_slc=1&z=1679071763","stop":1609306497675}],"attachments":[],"parameters":[],"start":1609306496274,"name":"Given User is on \"login\" page","stop":1609306497680},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306497682,"name":"get (\".email\")","stop":1609306497729},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306497729,"name":"expected **<input#Email.email>** to be **visible** assert","stop":1609306497729},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306497729,"name":"expected **<input#Email.email>** to be **enabled** assert","stop":1609306497729},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306497729,"name":"clear","stop":1609306497911},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306497911,"name":"type (\"test@gmail.com\")","stop":1609306498154},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498154,"name":"get (\".password\")","stop":1609306498185},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498185,"name":"expected **<input#Password.password>** to be **visible** assert","stop":1609306498185},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498185,"name":"expected **<input#Password.password>** to be **enabled** assert","stop":1609306498185},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498185,"name":"clear","stop":1609306498346},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498346,"name":"type (\"pass@123\")","stop":1609306498511},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498511,"name":"get (\".login-button\")","stop":1609306498543},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498543,"name":"expected **<input.button-1.login-button>** to be **visible** assert","stop":1609306498543},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498543,"name":"expected **<input.button-1.login-button>** to be **enabled** assert","stop":1609306498543},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498543,"name":"click","stop":1609306498633},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498632,"name":"--submitting form-- form sub","stop":1609306498632},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306498633,"name":"--waiting for new page to load-- page load","stop":1609306498633},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306499729,"name":"POST https://www.google-analytics.com/j/collect?v=1&_v=j87&a=2003803524&t=pageview&_s=1&dl=https://demo.nopcommerce.com/login&ul=en-gb&de=UTF-8&dt=nopCommerce demo store. Login&sd=30-bit&sr=1440x900&vp=1010x660&je=0&_u=AACAAAABAAAAAC~&jid=&gjid=&cid=1849141274.1609306498&tid=UA-7490022-2&_gid=344234115.1609306498&_slc=1&z=714110003","stop":1609306499729}],"attachments":[],"parameters":[],"start":1609306497680,"name":"When User enters \"test@gmail.com\" and \"pass@123\"","stop":1609306499733},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306499734,"name":"get (\".message-error\")","stop":1609306499761},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306499761,"name":"expected **<div.message-error.validation-summary-errors>** to be **visible** assert","stop":1609306499761},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306499761,"name":"invoke (\"text\")","stop":1609306499771},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1609306499770,"name":"expected **Login was unsuccessful. Please correct the errors and try again.No customer account found\\n** to include **Login was unsuccessful. Please correct the errors and try again.** assert","stop":1609306499770}],"attachments":[],"parameters":[],"start":1609306499733,"name":"Then User receives \"Login was unsuccessful. Please correct the errors and try again.\"","stop":1609306499772}],"attachments":[],"parameters":[],"labels":[{"name":"suite","value":"Login Page Validation"},{"name":"subSuite","value":"sanity"},{"name":"severity","value":"P0"},{"name":"story","value":"Login-Validation"},{"name":"owner","value":"kunal"},{"name":"feature","value":"Login Page Validation"}],"links":[],"start":1609306496262,"name":"Validate Login Operation to meet user requirement (example #1)","fullName":"Validate Login Operation to meet user requirement (example #1)","stop":1609306499772}
+{
+    "uuid": "9c8112f4-f6de-4884-b264-9dbba50fe0a4",
+    "historyId": "03aa048c64e534caf77d7e8a51bd1915",
+    "status": "passed",
+    "statusDetails": {},
+    "stage": "finished",
+    "steps": [
+        {
+            "status": "passed",
+            "statusDetails": {},
+            "stage": "finished",
+            "steps": [
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306496275,
+                    "name": "visit (\"https://demo.nopcommerce.com/login\")",
+                    "stop": 1609306497675
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306497675,
+                    "name": "POST https://www.google-analytics.com/j/collect?v=1&_v=j87&a=610063038&t=pageview&_s=1&dl=https://demo.nopcommerce.com/login&ul=en-gb&de=UTF-8&dt=nopCommerce demo store. Login&sd=30-bit&sr=1440x900&vp=1010x660&je=0&_u=IEBAAAABAAAAAC~&jid=1491499212&gjid=516412101&cid=1849141274.1609306498&tid=UA-7490022-2&_gid=344234115.1609306498&_r=1&_slc=1&z=1679071763",
+                    "stop": 1609306497675
+                }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "start": 1609306496274,
+            "name": "Given User is on \"login\" page",
+            "stop": 1609306497680
+        },
+        {
+            "status": "passed",
+            "statusDetails": {},
+            "stage": "finished",
+            "steps": [
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306497682,
+                    "name": "get (\".email\")",
+                    "stop": 1609306497729
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306497729,
+                    "name": "expected **<input#Email.email>** to be **visible** assert",
+                    "stop": 1609306497729
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306497729,
+                    "name": "expected **<input#Email.email>** to be **enabled** assert",
+                    "stop": 1609306497729
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306497729,
+                    "name": "clear",
+                    "stop": 1609306497911
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306497911,
+                    "name": "type (\"test@gmail.com\")",
+                    "stop": 1609306498154
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498154,
+                    "name": "get (\".password\")",
+                    "stop": 1609306498185
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498185,
+                    "name": "expected **<input#Password.password>** to be **visible** assert",
+                    "stop": 1609306498185
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498185,
+                    "name": "expected **<input#Password.password>** to be **enabled** assert",
+                    "stop": 1609306498185
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498185,
+                    "name": "clear",
+                    "stop": 1609306498346
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498346,
+                    "name": "type (\"pass@123\")",
+                    "stop": 1609306498511
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498511,
+                    "name": "get (\".login-button\")",
+                    "stop": 1609306498543
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498543,
+                    "name": "expected **<input.button-1.login-button>** to be **visible** assert",
+                    "stop": 1609306498543
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498543,
+                    "name": "expected **<input.button-1.login-button>** to be **enabled** assert",
+                    "stop": 1609306498543
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498543,
+                    "name": "click",
+                    "stop": 1609306498633
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498632,
+                    "name": "--submitting form-- form sub",
+                    "stop": 1609306498632
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306498633,
+                    "name": "--waiting for new page to load-- page load",
+                    "stop": 1609306498633
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306499729,
+                    "name": "POST https://www.google-analytics.com/j/collect?v=1&_v=j87&a=2003803524&t=pageview&_s=1&dl=https://demo.nopcommerce.com/login&ul=en-gb&de=UTF-8&dt=nopCommerce demo store. Login&sd=30-bit&sr=1440x900&vp=1010x660&je=0&_u=AACAAAABAAAAAC~&jid=&gjid=&cid=1849141274.1609306498&tid=UA-7490022-2&_gid=344234115.1609306498&_slc=1&z=714110003",
+                    "stop": 1609306499729
+                }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "start": 1609306497680,
+            "name": "When User enters \"test@gmail.com\" and \"pass@123\"",
+            "stop": 1609306499733
+        },
+        {
+            "status": "passed",
+            "statusDetails": {},
+            "stage": "finished",
+            "steps": [
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306499734,
+                    "name": "get (\".message-error\")",
+                    "stop": 1609306499761
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306499761,
+                    "name": "expected **<div.message-error.validation-summary-errors>** to be **visible** assert",
+                    "stop": 1609306499761
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306499761,
+                    "name": "invoke (\"text\")",
+                    "stop": 1609306499771
+                },
+                {
+                    "status": "passed",
+                    "statusDetails": {},
+                    "stage": "finished",
+                    "steps": [],
+                    "attachments": [],
+                    "parameters": [],
+                    "start": 1609306499770,
+                    "name": "expected **Login was unsuccessful. Please correct the errors and try again.No customer account found\\n** to include **Login was unsuccessful. Please correct the errors and try again.** assert",
+                    "stop": 1609306499770
+                }
+            ],
+            "attachments": [],
+            "parameters": [],
+            "start": 1609306499733,
+            "name": "Then User receives \"Login was unsuccessful. Please correct the errors and try again.\"",
+            "stop": 1609306499772
+        }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "labels": [
+        {
+            "name": "suite",
+            "value": "Login Page Validation"
+        },
+        {
+            "name": "subSuite",
+            "value": "sanity"
+        },
+        {
+            "name": "severity",
+            "value": "P0"
+        },
+        {
+            "name": "story",
+            "value": "Login-Validation"
+        },
+        {
+            "name": "owner",
+            "value": "kunal"
+        },
+        {
+            "name": "feature",
+            "value": "Login Page Validation"
+        }
+    ],
+    "links": [],
+    "start": 1609306496262,
+    "name": "Validate Login Operation to meet user requirement (example #1)",
+    "fullName": "Validate Login Operation to meet user requirement (example #1)",
+    "stop": 1609306499772
+}

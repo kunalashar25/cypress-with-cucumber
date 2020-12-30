@@ -3,6 +3,17 @@
 class BasePage {
 
     /**
+     * @description Locate element based on locator value
+     * @param {string} locator
+     */
+    getElement(locator) {
+        if (locator.startsWith('.') || locator.startsWith('#'))
+            return cy.get(locator)
+        else
+            return cy.xpath(locator)
+    }
+
+    /**
      * @description Open page
      * @param {string} url
      */
@@ -16,7 +27,7 @@ class BasePage {
      * @param {string} textToFill
      */
     fillText(locator, textToFill) {
-        cy.get(locator).should('be.visible').should('be.enabled').clear().type(textToFill)
+        this.getElement(locator).should('be.visible').should('be.enabled').clear().type(textToFill)
     }
 
     /**
@@ -24,15 +35,7 @@ class BasePage {
      * @param {string} locator
      */
     click(locator) {
-        cy.get(locator).should('be.visible').should('be.enabled').click()
-    }
-
-    /**
-     * @description Perform click with xpath
-     * @param {string} locator
-     */
-    clickWithXpath(locator) {
-        cy.xpath(locator).should('be.visible').click()
+        this.getElement(locator).should('be.visible').click()
     }
 
     /**
@@ -41,7 +44,7 @@ class BasePage {
      * @param {string} childLocator
      */
     hoverAndClick(parentLocator, childLocator) {
-        cy.xpath(parentLocator).should('be.visible').click()
+        this.getElement(parentLocator).should('be.visible').click()
     }
 
     /**
@@ -49,7 +52,7 @@ class BasePage {
      * @param {string} locator
      */
     getText(locator) {
-        return cy.get(locator).should('be.visible').invoke('text')
+        return this.getElement(locator).should('be.visible').invoke('text')
     }
 }
 export default BasePage

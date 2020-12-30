@@ -1,3 +1,22 @@
-Need to write multiple methods in wrapper class for css and xpath.
+Open Issues:
 unable to mouse hover
 excluding node_modules in tsconfig.json will cause error for cy.xpath
+Generating execution history trend 
+parallel execution of scenarios
+faker library
+
+
+Resolved:
+Compilation probelm resolved with typescript
+allure auto tags suggestions
+ghekin statement suggestions
+custom errors to find common cause of failures
+usign allure annotations to generate detailed report
+Need to write multiple methods in wrapper class for css and xpath.
+
+To Check
+Buddy Work Integration
+How to display info for multiple browser execution in single run
+store execution info in db and show on UI
+integration with Splunk or Elk
+clean up report
