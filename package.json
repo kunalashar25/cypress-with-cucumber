@@ -22,5 +22,8 @@
     "nonGlobalStepDefinitions": false,
     "commonPath": "cypress/integration/step_definitions/common",
     "stepDefinitions": "cypress/integration/step_definitions"
+  },
+  "dependencies": {
+    "faker": "^5.1.0"
   }
 }
