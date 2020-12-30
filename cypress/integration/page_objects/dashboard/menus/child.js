@@ -1,4 +1,6 @@
+import InvalidArgumentError from '../../../../../custom_errors/invalid_argument'
 
+// menu locators
 const MENU_DESKTOP = '(//a[normalize-space()="Desktop"])[1]'
 const MENU_SOFTWARE = '//img[contains(@title,"Software")]'
 
@@ -17,7 +19,7 @@ class ChildMenu{
                 return MENU_SOFTWARE
                 break;
             default:
-                throw new Error('Invalid value provided for Child Menu. Value:: ' + value)
+                throw new InvalidArgumentError('Invalid value provided for Child Menu. Value:: ' + value)
         }
     }
 }

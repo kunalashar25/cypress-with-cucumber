@@ -6,31 +6,29 @@
         ]
     },
     {
-        "name": "Infrastructure problems",
-        "matchedStatuses": [
-            "broken",
-            "failed"
-        ],
-        "messageRegex": ".*bye-bye.*"
-    },
-    {
-        "name": "Outdated tests",
-        "matchedStatuses": [
-            "broken"
-        ],
-        "traceRegex": ".*FileNotFoundException.*"
-    },
-    {
         "name": "Element Not Found",
-        "messageRegex":".*Expected to find element:*",
+        "messageRegex": ".*Expected to find element.*",
         "matchedStatuses": [
             "failed"
         ]
     },
     {
-        "name": "Test defects",
+        "name": "Invalid Argument Error",
+        "traceRegex": ".*InvalidArgumentError.*",
         "matchedStatuses": [
-            "broken",
+            "failed"
+        ]
+    },
+    {
+        "name": "All Failures",
+        "matchedStatuses": [
+            "failed"
+        ]
+    },
+    {
+        "name": "Assertion Error",
+        "traceRegex": ".*AssertionError.*",
+        "matchedStatuses": [
             "failed"
         ]
     }

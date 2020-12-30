@@ -18,7 +18,8 @@
     "include": [
         "node_modules/cypress-xpath/src/index.d.ts",
         "cypress/integration/page_objects",
-        "cypress/integration/step_definitions"
+        "cypress/integration/step_definitions",
+        "custom_errors/*.js"
     ],
     "exclude": [
         

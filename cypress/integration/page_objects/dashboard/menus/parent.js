@@ -1,4 +1,6 @@
+import InvalidArgumentError from '../../../../../custom_errors/invalid_argument'
 
+// menu locators
 const MENU_COMPUTER = '(//a[normalize-space()="Computers"])[1]'
 const MENU_ELECTRONICS = '(//a[normalize-space()="Electronics"])[1]'
 
@@ -17,7 +19,7 @@ class ParentMenu {
                 return MENU_ELECTRONICS
                 break;
             default:
-                throw new Error('Invalid value provided for Parent Menu. Value:: ' + value)
+                throw new InvalidArgumentError('Invalid value provided for Parent Menu. Value:: ' + value)
         }
     }
 }
