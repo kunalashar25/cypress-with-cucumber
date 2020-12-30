@@ -17,8 +17,7 @@ class ParentMenu {
                 return MENU_ELECTRONICS
                 break;
             default:
-                cy.log('Invalid value provided for Parent Menu:: ' + value)
-                break;
+                throw new Error('Invalid value provided for Parent Menu. Value:: ' + value)
         }
     }
 }

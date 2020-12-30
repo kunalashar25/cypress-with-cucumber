@@ -17,8 +17,7 @@ class ChildMenu{
                 return MENU_SOFTWARE
                 break;
             default:
-                cy.log('Invalid value provided for Child Menu:: ' + value)
-                break;
+                throw new Error('Invalid value provided for Child Menu. Value:: ' + value)
         }
     }
 }

@@ -2,6 +2,7 @@
     "testFiles": "**/*.feature",
     "viewportWidth": 1010,
     "env": {
-        "allureResultsPath": "output/allure-result"
+        "allureResultsPath": "output/allure-result",
+        "issuePrefix": "https://url-to-jira/tests/caseId-"
     }
 }

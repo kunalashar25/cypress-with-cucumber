@@ -16,8 +16,8 @@ class DashboardPage extends BasePage {
 
     /**
      * @description select Menu item
-     * @param {any} parent
-     * @param {any} child
+     * @param {string} parent
+     * @param {string} child
      */
     selectMenu(parent, child) {
         var parentLocator = ParentMenu.getMenu(parent)

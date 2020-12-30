@@ -1,0 +1,8 @@
+To Run with allure reporting
+npx cypress run --env allure=true --browser chrome
+
+To generate allure report
+allure serve output/allure-result
+
+To  check compile time issues
+npm run compile

@@ -29,7 +29,7 @@ class BasePage {
 
     /**
      * @description Perform click with xpath
-     * @param {string | undefined} locator
+     * @param {string} locator
      */
     clickWithXpath(locator) {
         cy.xpath(locator).should('be.visible').click()

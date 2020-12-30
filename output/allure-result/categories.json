@@ -21,7 +21,8 @@
         "traceRegex": ".*FileNotFoundException.*"
     },
     {
-        "name": "Product defects",
+        "name": "Element Not Found",
+        "messageRegex":".*Expected to find element:*",
         "matchedStatuses": [
             "failed"
         ]
@@ -29,7 +30,8 @@
     {
         "name": "Test defects",
         "matchedStatuses": [
-            "broken"
+            "broken",
+            "failed"
         ]
     }
 ]

@@ -39,7 +39,7 @@ class LoginPage extends BasePage {
      * @param {string} message
      */
     verifyErrorMessage(message) {
-        this.getText(EMAIL_ERROR).should('equal', message)
+        this.getText(EMAIL_ERROR).should('contain', message)
     }
 }
 

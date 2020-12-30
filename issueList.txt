@@ -1,0 +1,3 @@
+Need to write multiple methods in wrapper class for css and xpath.
+unable to mouse hover
+excluding node_modules in tsconfig.json will cause error for cy.xpath

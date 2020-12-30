@@ -7,12 +7,13 @@
         "checkJs": true,
         "strict": true,
         "alwaysStrict": true,
-        "noImplicitAny": false,
+        "noImplicitAny": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "pretty": true,
         "strictNullChecks": true,
-        "sourceMap": false
+        "sourceMap": false,
+        "suppressExcessPropertyErrors": true
     },
     "include": [
         "node_modules/cypress-xpath/src/index.d.ts",
